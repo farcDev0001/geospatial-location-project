@@ -5,3 +5,6 @@ modules/.ipynb_checkpoints/getingGeoPointsCompanies-checkpoint.ipynb
 
 modules/pruebas/
 modules/.ipynb_checkpoints/
+
+modules/__pycache__/
+modules/pruebas.ipynb
