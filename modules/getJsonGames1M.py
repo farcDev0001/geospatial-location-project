@@ -45,5 +45,3 @@ def getJson():
     dfOffice = pd.DataFrame(data)
     dfOffice['position']=dfOffice.apply(createGeoJson,axis = 1)
     dfOffice.to_json('../outputs/officesVideo1M.json')
-
-getJson()
