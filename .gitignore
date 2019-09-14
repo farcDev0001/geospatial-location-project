@@ -2,7 +2,6 @@
 
 modules/.ipynb_checkpoints/getingGeoPointsCompanies-checkpoint.ipynb
 
-modules/__pycache__/getEnv.cpython-36.pyc
-modules/__pycache__/getMongoClient.cpython-36.pyc
-modules/getingGeoPointsCompanies.ipynb
 
+modules/pruebas/
+modules/.ipynb_checkpoints/

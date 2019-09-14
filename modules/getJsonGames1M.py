@@ -17,7 +17,7 @@ def createGeoJson(dfOffice):
         "coordinates":[dfOffice["long"],dfOffice["lat"]]
     }
 
-def getJson():
+def writeJsonOffice():
     from pymongo import MongoClient
     import pandas as pd
     from getMongoClient import getClient
@@ -44,4 +44,4 @@ def getJson():
     data = getDictOffice(videGamesMt1M)
     dfOffice = pd.DataFrame(data)
     dfOffice['position']=dfOffice.apply(createGeoJson,axis = 1)
-    dfOffice.to_json('../outputs/officesVideo1M.json')
+    dfOffice.to_json('../outputs/officesVideo1M.json',orient="records")
