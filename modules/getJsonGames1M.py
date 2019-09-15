@@ -3,11 +3,12 @@ def getDictOffice(offices):
     for ele in offices:
         if len(ele['offices']) > 0:
             name = ele['name'] 
+            city = ele['offices'][0]['city']
             money = ele['total_money_raised']
             year = ele['founded_year']
             latitude = ele['offices'][0]['latitude']
             longitude = ele['offices'][0]['longitude']
-            listdictOffice.append({'name':name,'money_raised':money,'founded_year':year,
+            listdictOffice.append({'name':name,'city':city,'money_raised':money,'founded_year':year,
                                   'lat':latitude,'long':longitude})
     return listdictOffice
 
@@ -32,7 +33,7 @@ def writeJsonOffice():
                                             'total_money_raised':{'$regex':'M'},
                                            "offices.latitude":{'$ne':None},
                                            "offices.longitude":{'$ne':None}}, 
-    {'name':1,'total_money_raised':1,"offices.latitude":1,"offices.longitude":1,'founded_year':1},
+    {'name':1,"offices.city":1,'total_money_raised':1,"offices.latitude":1,"offices.longitude":1,'founded_year':1},
                                  ))
     
     """for ele in videGamesMt1M:
@@ -45,3 +46,4 @@ def writeJsonOffice():
     dfOffice = pd.DataFrame(data)
     dfOffice['position']=dfOffice.apply(createGeoJson,axis = 1)
     dfOffice.to_json('../outputs/officesVideo1M.json',orient="records")
+
