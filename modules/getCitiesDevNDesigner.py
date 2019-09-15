@@ -27,8 +27,8 @@ def citiesDevNDesignerOK():
         for city in list(df.city.value_counts().index):
             if city not in cities:
                 cities.append(city)
-                citiesPos.append([df.loc[df['city'] == city].lat.mean(),df.loc[df['city'] == city].long.mean())
-    return {cities[i]:citiesPos[i] for i in range(len(cities))}
+                citiesPos.append([df.loc[df['city'] == city].lat.mean(),df.loc[df['city'] == city].long.mean()])
+    return [{'city':cities[i],'lat':citiesPos[i][0],'long':citiesPos[i][1]} for i in range(len(cities))]
 
 
 def getCompaniesNear(lat,long, max_meters,db):
