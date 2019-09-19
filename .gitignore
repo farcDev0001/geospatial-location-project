@@ -12,3 +12,5 @@ modules/apiQueries.py
 
 Pipfile
 Pipfile.lock
+
+geospatial/
