@@ -9,3 +9,6 @@ modules/.ipynb_checkpoints/
 modules/__pycache__/
 modules/apiQueries.py
 .vscode/
+
+Pipfile
+Pipfile.lock
