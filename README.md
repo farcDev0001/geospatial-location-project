@@ -1,6 +1,6 @@
 # geospatial-location-project
 
-In this project I locate a company based on given conditions. My starting point is a dataset of 
+In this project I locate a company based on given conditions. My starting point is a dataset of Crunchbase.
 
 # Steps
 * To import the dataset to a MongoDb Server
@@ -8,8 +8,13 @@ In this project I locate a company based on given conditions. My starting point 
 * Filtering the cities of companies offices using the FourSquare API.
 * Choosing a city using filtering criteria and some web scraping.
 * Adding interest points near companies in the city using FourSquare API.
-* Drawing a map using plotly and open-maps.
+* Drawing a map using plotly and OpenStreetMaps.
 
 # Next Steps
 * Refactorize code
 * Represents the map with Tableau
+
+
+# Capture of results
+
+![Alt text](./outputs/map.png?raw=true "Map")
