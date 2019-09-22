@@ -16,7 +16,7 @@ def filterCitiesAirport(city):
 
 def filterCitiesTrain(city):
     from apiQueries import getJsonFourSquare
-    json = getJsonFourSquare(city['lat'],city['long'],'train station',20000,lim = 15)
+    json = getJsonFourSquare(city['lat'],city['long'],'train station',30000,lim = 15)
     if len(json['response']['groups'][0]['items'])>10:
         return True
     return False
