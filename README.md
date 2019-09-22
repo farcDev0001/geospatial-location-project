@@ -2,7 +2,7 @@
 
 In this project I locate a company based on given conditions. My starting point is a dataset of Crunchbase.
 
-# Steps
+## Steps
 * To import the dataset to a MongoDb Server
 * Queries and $near functions to locate the companies.
 * Filtering the cities of companies offices using the FourSquare API.
@@ -10,11 +10,11 @@ In this project I locate a company based on given conditions. My starting point 
 * Adding interest points near companies in the city using FourSquare API.
 * Drawing a map using plotly and OpenStreetMaps.
 
-# Next Steps
+## Next Steps
 * Refactorize code
 * Represents the map with Tableau
 
 
-# Capture of results
+## Capture of results
 
 ![Alt text](./outputs/map.png?raw=true "Map")
