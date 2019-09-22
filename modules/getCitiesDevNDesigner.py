@@ -16,10 +16,10 @@ def citiesDevNDesignerOK():
     '''al hacer un print de maximo sé que la maxima aglomeración de compañias 
     (radio = 100km) que me interesan (videojuegos >1M dolares ganados) es de 54
     por lo que considero aceptable quedarme con lugares en los que haya una aglomeración de más
-    de la mitad (26 empresas), esos serán lugares que satisfagan a los diseñadores y a los programadores,
+    de 5 empresas, esos serán lugares que satisfagan a los diseñadores y a los programadores,
     a partir de ahora solo tengo que sacar una lista de esas ciudades'''
 
-    listGame1M100K=list(filter(lambda df:False if df.name.count() in range(maximo//2,maximo+1) else True,listGame1M100K))
+    listGame1M100K=list(filter(lambda df:True if df.name.count() in range(5,maximo+1) else False,listGame1M100K))
 
     cities = []
     citiesPos = []
