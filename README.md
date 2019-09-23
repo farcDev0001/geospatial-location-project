@@ -6,7 +6,7 @@ In this project I locate a company based on given conditions. My starting point 
 https://public.tableau.com/profile/francisco.rodrigo#!/vizhome/MONGO-PROJECTFranciscoRodrigo/MongoProject?publish=yes
 
 
-## Results capture (OpenStreetMaps)
+## Results capture (OpenStreetMaps+Plotly)
 
 ![Alt text](./outputs/map.png?raw=true "Map")
 
