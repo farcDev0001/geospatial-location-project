@@ -2,6 +2,14 @@
 
 In this project I locate a company based on given conditions. My starting point is a dataset of Crunchbase.
 
+# Results in Tableau
+https://public.tableau.com/profile/francisco.rodrigo#!/vizhome/MONGO-PROJECTFranciscoRodrigo/MongoProject?publish=yes
+
+
+## Results capture (OpenStreetMaps)
+
+![Alt text](./outputs/map.png?raw=true "Map")
+
 ## Steps
 * To import the dataset to a MongoDb Server
 * Queries and $near functions to locate the companies.
@@ -15,6 +23,6 @@ In this project I locate a company based on given conditions. My starting point 
 * Represents the map with Tableau
 
 
-## Capture of results
+## Capture of results (OpenStreetMaps)
 
 ![Alt text](./outputs/map.png?raw=true "Map")
