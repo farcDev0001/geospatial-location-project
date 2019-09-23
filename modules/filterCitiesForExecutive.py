@@ -1,6 +1,6 @@
 def getCities(dictCities):
     cities = list(filter(filterCitiesAirport,dictCities))
-    cities = list(filter(filterCitiesTrain,cities))
+    
     return cities
 
 def filterCitiesAirport(city):
