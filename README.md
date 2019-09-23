@@ -1,6 +1,6 @@
 # geospatial-location-project
 
-In this project I locate a company based on given conditions. My starting point is a dataset of Crunchbase.
+In this project I locate a company based on given conditions. My starting point is a Crunchbase dataset.
 
 ## Results in Tableau
 https://public.tableau.com/profile/francisco.rodrigo#!/vizhome/MONGO-PROJECTFranciscoRodrigo/MongoProject?publish=yes
