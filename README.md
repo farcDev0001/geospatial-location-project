@@ -18,6 +18,9 @@ https://public.tableau.com/profile/francisco.rodrigo#!/vizhome/MONGO-PROJECTFran
 * Adding interest points near companies in the city using FourSquare API.
 * Drawing a map using plotly and OpenStreetMaps.
 
+## Warnings
+* There are some functions defined than aren´t used, like google ApiPlace queries and some filters. They works but finally I decided not to use them.
+
 ## Next Steps
 * Refactorize code
 
