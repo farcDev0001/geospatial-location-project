@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import pandas as pd
 from getMongoClient import getClient
-from filters.getEnv import getVariable
+from getEnv import getVariable
 def citiesDevNDesignerOK():
     
     client = getClient()
@@ -46,7 +46,6 @@ def getCompaniesNear(lat,long, max_meters,db):
     }))
 
 def getListOffice100km(listOffice,db):
-    import pandas as pd
     listDf = []
     for ele in listOffice:
         df = pd.DataFrame(getCompaniesNear(ele['lat'],ele['long'],100000,db))
