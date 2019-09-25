@@ -1,3 +1,7 @@
+from pymongo import MongoClient
+import pandas as pd
+from getMongoClient import getClient
+
 def getDictOffice(offices):
     listdictOffice = []
     for ele in offices:
@@ -20,9 +24,6 @@ def createGeoJson(dfOffice):
     }
 
 def writeJsonOffice():
-    from pymongo import MongoClient
-    import pandas as pd
-    from getMongoClient import getClient
     client = getClient()
     dbCompanies = client.companies
 

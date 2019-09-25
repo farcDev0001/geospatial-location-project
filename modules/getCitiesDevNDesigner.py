@@ -1,8 +1,9 @@
+from pymongo import MongoClient
+import pandas as pd
+from getMongoClient import getClient
+from filters.getEnv import getVariable
 def citiesDevNDesignerOK():
-    from pymongo import MongoClient
-    import pandas as pd
-    from getMongoClient import getClient
-    from getEnv import getVariable
+    
     client = getClient()
     dbCompanies = client.companies
     videGamesMt1M = list(dbCompanies.officesVideo1M.find())

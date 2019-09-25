@@ -1,5 +1,5 @@
+from apiQueries import getJsonFourSquare
 def addByQuery(df,lat,long,query,distance = 10000):
-    from apiQueries import getJsonFourSquare
     json = getJsonFourSquare(lat,long,query,distance,lim=50)
     for ele in json['response']['groups'][0]['items']:
         category = query

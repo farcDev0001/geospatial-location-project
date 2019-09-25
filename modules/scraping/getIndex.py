@@ -1,6 +1,6 @@
+from bs4 import BeautifulSoup
+import requests as re
 def getRent(cities):
-    from bs4 import BeautifulSoup
-    import requests as re
     retorno = []
     soup = BeautifulSoup(re.get('https://www.numbeo.com/cost-of-living/rankings.jsp').text, 'html.parser')
     soup = soup.select('tr[style]')

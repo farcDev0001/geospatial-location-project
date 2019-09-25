@@ -1,8 +1,8 @@
+from pymongo import MongoClient
+import pandas as pd
+from getMongoClient import getClient
+from getEnv import getVariable
 def officePhilaOk():
-    from pymongo import MongoClient
-    import pandas as pd
-    from getMongoClient import getClient
-    from getEnv import getVariable
     client = getClient()
     dbCompanies = client.companies
     cambridge1m = list(dbCompanies.philadelphia.find())
@@ -27,7 +27,6 @@ def getCompaniesNear(lat,long, max_Distance,db):
     }))
 
 def getListOffice2km(listOffice,db):
-    import pandas as pd
     listDf = []
     for ele in listOffice:
         if ele['founded_year'] > 2008:
